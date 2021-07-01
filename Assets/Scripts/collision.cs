@@ -21,7 +21,12 @@ public class collision : MonoBehaviour
         if (collision.gameObject.name == "asteroid big" || collision.gameObject.name == "asteroid small")
         {
             Debug.Log("collision");
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
+
+            var ac = collision.gameObject.GetComponent<asteroid>();
+            ac.DestroyAsteroid();
+
+            //Destroy(collision.gameObject);            
         }
     }
 }

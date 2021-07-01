@@ -60,8 +60,9 @@
     <Compile Include="Assets\Scripts\playership.cs" />
     <Compile Include="Assets\Scripts\shoot.cs" />
     <Compile Include="Assets\Scripts\screenwrap.cs" />
-    <Compile Include="Assets\Scripts\bullet.cs" />
     <Compile Include="Assets\Scripts\collision.cs" />
+    <Compile Include="Assets\Scripts\bullet.cs" />
+    <Compile Include="Assets\Scripts\asteroid.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
