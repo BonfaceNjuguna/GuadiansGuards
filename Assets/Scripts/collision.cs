@@ -28,5 +28,8 @@ public class collision : MonoBehaviour
 
             //Destroy(collision.gameObject);            
         }
+
+        //ui
+        score.instance.AddPoints();
     }
 }
