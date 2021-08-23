@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class playership : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject Bullet;
+
+    private AudioSource shootBullet;
+
     void Start()
     {
-        
+        shootBullet = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -15,21 +19,35 @@ public class playership : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
-            transform.Translate(new Vector3(0, 0, 10) * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, 5) * Time.deltaTime);
         }
         if (Input.GetKey("s"))
         {
-            transform.Translate(new Vector3(0, 0, -10) * Time.deltaTime);
+            transform.Translate(new Vector3(0, 0, -5) * Time.deltaTime);
         }
 
         if (Input.GetKey("a"))
         {
-            transform.Rotate(new Vector3(0, -60, 0) * Time.deltaTime);
+            transform.Rotate(new Vector3(0, -90, 0) * Time.deltaTime);
         }
 
         if (Input.GetKey("d"))
         {
-            transform.Rotate(new Vector3(0, 60, 0) * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 90, 0) * Time.deltaTime);
+        }
+
+        //shooting
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //audio sound shooting
+            shootBullet.Play();
+
+            //The Bullet instantiation happens here.
+            GameObject Bullet_Handler;
+            Bullet_Handler = Instantiate(Bullet) as GameObject;
+            Bullet.transform.position = transform.position;
+            Bullet.transform.rotation = transform.rotation;
+            Destroy(Bullet_Handler, 8.0f);
         }
     }
 }

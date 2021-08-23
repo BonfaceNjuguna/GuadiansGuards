@@ -6,7 +6,6 @@ public class shoot : MonoBehaviour
 {
 
     public GameObject Bullet;
-    public float Bullet_Forward_Force;
 
     // Start is called before the first frame update
     void Start()
