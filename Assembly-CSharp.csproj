@@ -64,8 +64,9 @@
     <Compile Include="Assets\Scripts\collision.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
-    <Compile Include="Assets\Scripts\score.cs" />
     <Compile Include="Assets\Scripts\Launcher.cs" />
+    <Compile Include="Assets\Scripts\score.cs" />
+    <Compile Include="Assets\Scripts\asteroidmovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

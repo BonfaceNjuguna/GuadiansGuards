@@ -17,23 +17,23 @@ public class playership : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("w"))
-        {
-            transform.Translate(new Vector3(0, 0, 5) * Time.deltaTime);
-        }
         if (Input.GetKey("s"))
         {
-            transform.Translate(new Vector3(0, 0, -5) * Time.deltaTime);
+            transform.Translate(new Vector3(5, 0, 0) * Time.deltaTime);
+        }
+        if (Input.GetKey("w"))
+        {
+            transform.Translate(new Vector3(-5, 0, 0) * Time.deltaTime);
         }
 
         if (Input.GetKey("a"))
         {
-            transform.Rotate(new Vector3(0, -90, 0) * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, -90) * Time.deltaTime);
         }
 
         if (Input.GetKey("d"))
         {
-            transform.Rotate(new Vector3(0, 90, 0) * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, 90) * Time.deltaTime);
         }
 
         //shooting
@@ -44,9 +44,7 @@ public class playership : MonoBehaviour
 
             //The Bullet instantiation happens here.
             GameObject Bullet_Handler;
-            Bullet_Handler = Instantiate(Bullet) as GameObject;
-            Bullet.transform.position = transform.position;
-            Bullet.transform.rotation = transform.rotation;
+            Bullet_Handler = Instantiate(Bullet, transform.position, transform.rotation) as GameObject;
             Destroy(Bullet_Handler, 8.0f);
         }
     }
