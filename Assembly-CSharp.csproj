@@ -61,12 +61,13 @@
     <Compile Include="Assets\Scripts\asteroid.cs" />
     <Compile Include="Assets\Scripts\shoot.cs" />
     <Compile Include="Assets\Scripts\screenwrap.cs" />
+    <Compile Include="Assets\Scripts\asteroidmovement.cs" />
     <Compile Include="Assets\Scripts\collision.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\Scripts\bullet.cs" />
     <Compile Include="Assets\Scripts\Launcher.cs" />
     <Compile Include="Assets\Scripts\score.cs" />
-    <Compile Include="Assets\Scripts\asteroidmovement.cs" />
+    <Compile Include="Assets\Scripts\wrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
