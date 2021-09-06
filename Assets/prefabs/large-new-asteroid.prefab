@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smallAsteroids: {fileID: 7258360767241045557, guid: 11502e142e529774cb0a20092e66685b, type: 3}
+  explosion: {fileID: 6983217311981741241, guid: 0a7412c398a6b7d419b8a59dd2918ba6, type: 3}
 --- !u!114 &-6321699157303254814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,8 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692a6d94732380f4e94c9062a50b570b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenHeight: 7
-  screenWidth: 13
+  screenHeight: 12
+  screenWidth: 33
 --- !u!114 &-612284631952981725
 MonoBehaviour:
   m_ObjectHideFlags: 0

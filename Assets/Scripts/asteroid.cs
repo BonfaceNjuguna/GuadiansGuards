@@ -5,7 +5,7 @@ using UnityEngine;
 public class asteroid : MonoBehaviour
 {
     public GameObject smallAsteroids;
-
+    public ParticleSystem explosion;
     public void DestroyAsteroid()
     {
         for (int i = 0; i < 2; ++i)
@@ -15,5 +15,6 @@ public class asteroid : MonoBehaviour
             asteroid.GetComponent<Rigidbody>().velocity = newVelocity;
         }
         Destroy(gameObject);
+        Instantiate(explosion, transform.position, Quaternion.identity);
     }
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 862913733921957716}
   - component: {fileID: -4897810316585071017}
   - component: {fileID: 6767648112811195649}
+  - component: {fileID: -8200204741194128064}
   m_Layer: 10
   m_Name: asteroid small
   m_TagString: asteroid
@@ -139,5 +140,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692a6d94732380f4e94c9062a50b570b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenHeight: 7
-  screenWidth: 13
+  screenHeight: 12
+  screenWidth: 33
+--- !u!114 &-8200204741194128064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862913733921957713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a52951d9b3c69341ac6630a6ec140e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallAsteroids: {fileID: 0}
+  explosion: {fileID: 6983217311981741241, guid: 0a7412c398a6b7d419b8a59dd2918ba6, type: 3}
